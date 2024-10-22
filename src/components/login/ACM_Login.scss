@@ -1,28 +1,123 @@
+// the acm logo on the top left
+.headerlogo2 {
+    width: 104px;
+    height: auto;
+}
+
+// This is the Background for the whole page
+.loginPage2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #282A2E; 
+    color: white;
+    position: relative; 
+}
+
+// This is the outer box square in the middle
+.outerBox {
+    background-color: #1D74C5;
+    padding: 10px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);    
+}
+
+// This is the inner box square in the middle
+.innerBox {
+    background-color: #0256A5;
+    padding: 40px;
+    width: 1000px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+// This is the Constitution logo
+.logoImage2 {
+    width: 110px;
+    margin-bottom: 10px;
+}
+
+// This is the "Admin Login" text
+.adminLogin {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    font-family: Literata !important;
+}
+
+//space between the two text boxes
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10.5px;
+}
+
+// This is the "Email" & "Password" texts
+.formText {
+    font-size: 1rem;
+    text-align: left;
+    color: white;
+    font-family: Literata, !important;  
+}
+
+// This is the "Email" & "Password" boxes
+.textBox {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #2222;
+    font-size: 1rem;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5)
+}
+
+// This is the login in button at the bottom
+.button {
+    background-color: #282828;
+    color: #0256A5;
+    border: black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;   
+}
+  
+// This is the footer text
+.footer-text
+{
+padding: 0.05%;
+}
+  
+//size of footer text
+.footer-catchy-text2{
+    font-size: 20px;
+}
+
+/* Below is the old code used for the old simple login page, 
+I left it here as a just in case -JV */
+
+/*
 .header {
     z-index: 200;
     display: flex;
-    
 }
-
 .loginContainer{
- 
     align-items: center;
     flex-direction: column;
     max-width: 500px;
     margin:auto;
     padding: 0 20px;
     overflow: hidden;
-
-
-    
 }
-
 .formText{
     font-size: x-large;
-    
 }
-
 .textBox{
    width: 100%;
-   
 }
+*/

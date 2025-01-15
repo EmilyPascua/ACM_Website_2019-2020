@@ -30,6 +30,7 @@ import { Navbar } from "react-bootstrap";
 import ProjectsAdmin from "./components/admin/projectsAdmin/ProjectsAdmin";
 import BoardAdmin from "./components/admin/boardAdmin/BoardAdmin";
 import EventsAdmin from "./components/admin/eventsAdmin/EventsAdmin";
+import ModPrograms from "./components/mod-programs/ModPrograms.js";
 
 class App extends React.Component {
   constructor(props) {
@@ -95,9 +96,10 @@ class App extends React.Component {
         <Route path="/projects" component={Projects} />
         <Route path="/professional" component={Professional} />
         <Route path="/board" component={NewBoard} />
-        <Route path="/programs" component={Programs} />
+        <Route path="/programs" component={ModPrograms} />
         <Route path="/portal" component={Portal} />
         <Route path="/Success" component={SuccessPage} />
+        <Route path="/mentorship" component={Programs} />
         <Route
           path="/discord"
           component={() => {

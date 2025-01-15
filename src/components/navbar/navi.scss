@@ -78,13 +78,18 @@
 
 .navbar a {
   color: #ffffff !important;
-  font-size: 10pt;
+  font-size: 16pt;
+  margin-right: 15px;
 }
 
 .nav-membership-button {
   width: 100%;
   justify-content: center;
+  font-size: 16px;
+  margin-right: -15px;
 }
+
+
 
 .nav-item {
   padding-right: 1rem;
@@ -104,9 +109,9 @@
   border-color: #2ecc71 !important;
 }
 
-.mr-auto {
-  justify-content: center !important;
-}
+// .mr-auto {
+//   justify-content: center !important;
+// }
 
 #logo {
   width: 75px;

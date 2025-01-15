@@ -28,6 +28,18 @@
         vertical-align: middle;
         display: table-cell;
         height: 100%;
+
+        .iconContainer{
+            display: flex;
+            justify-content: center;
+            gap: 75px;
+            
+        }
+        .iconSocial:hover{
+            color: #029cd7 !important;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
         
 
         .subTitle {

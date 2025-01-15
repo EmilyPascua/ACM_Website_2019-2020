@@ -1,16 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./navi.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import logo from "./acmlogo1.png";
 import {
   Navbar,
-  NavDropdown,
   Nav,
   Button,
-  Modal,
-  NavbarBrand,
 } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
   faFacebookF,
@@ -18,51 +14,51 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-//import { faInstagram, faFacebookF, faSnapchatGhost } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-function ElectionResults() {
-  const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+// function ElectionResults() {
+//   const [show, setShow] = useState(false);
 
-  return (
-    <>
-      <Button variant="primary" onClick={handleShow}>
-        {" "}
-        Election Results{" "}
-      </Button>
-      <Modal
-        show={show}
-        onHide={handleClose}
-        backdrop="static"
-        keyboard={false}
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>
-            Congratuations to the future Leaders for the 2023-2024 school year!!
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {" "}
-          ⭐ President: Keyvan M Kani <br /> ⭐ Vice President: Andres Dominguez{" "}
-          <br /> ⭐ Treasurer: Joseph Acosta <br />
-          ⭐ Project Manager: Shambhavi Bhandari <br /> ⭐ Project Officers:
-          Charlie Dominguez & Thien Ho <br />
-          ⭐ Social Media Officer: Ivan Ho <br /> <br /> Thanking all candidates
-          that have ran for this election, <br />
-          and for everyone that has supported our candidates!
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="primary" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
-    </>
-  );
-}
+//   const handleClose = () => setShow(false);
+//   const handleShow = () => setShow(true);
+
+//   return (
+//     <>
+//       <Button variant="primary" onClick={handleShow}>
+//         {" "}
+//         Election Results{" "}
+//       </Button>
+//       <Modal
+//         show={show}
+//         onHide={handleClose}
+//         backdrop="static"
+//         keyboard={false}
+//       >
+//         <Modal.Header closeButton>
+//           <Modal.Title>
+//             Congratuations to the future Leaders for the 2023-2024 school year!!
+//           </Modal.Title>
+//         </Modal.Header>
+//         <Modal.Body>
+//           {" "}
+//           ⭐ President: Keyvan M Kani <br /> ⭐ Vice President: Andres Dominguez{" "}
+//           <br /> ⭐ Treasurer: Joseph Acosta <br />
+//           ⭐ Project Manager: Shambhavi Bhandari <br /> ⭐ Project Officers:
+//           Charlie Dominguez & Thien Ho <br />
+//           ⭐ Social Media Officer: Ivan Ho <br /> <br /> Thanking all candidates
+//           that have ran for this election, <br />
+//           and for everyone that has supported our candidates!
+//         </Modal.Body>
+//         <Modal.Footer>
+//           <Button variant="primary" onClick={handleClose}>
+//             Close
+//           </Button>
+//         </Modal.Footer>
+//       </Modal>
+//     </>
+//   );
+// }
 
 class Navi extends React.Component {
   render() {
@@ -85,13 +81,13 @@ class Navi extends React.Component {
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto">
-              <NavDropdown
+          <Navbar.Collapse id="responsive-navbar-nav" className="me-auto">
+            <Nav className="ml-auto">
+              {/* <NavDropdown
                 title="about us"
                 className="collapsible-nav-dropdown"
               >
-                <NavDropdown.Item href="/aboutus">
+                {/* <NavDropdown.Item href="/aboutus">
                   <div className="nav-dropdown-text">about us</div>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/board">
@@ -116,16 +112,23 @@ class Navi extends React.Component {
                 <NavDropdown.Item href="/professional">
                   <div className="nav-dropdown-text">events</div>
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */} 
+              <Nav.Link href="/aboutus">About Us</Nav.Link>
 
-              <Nav.Link href="/events">calendar</Nav.Link>
+              <Nav.Link href="/board">Board</Nav.Link>
+
+              <Nav.Link href="/events">Calendar</Nav.Link>
+
+              <Nav.Link href="/professional">Events</Nav.Link>
+
+              <Nav.Link href="/programs">Programs</Nav.Link>
               {/* Uncomment Sponsors page link when pamphlet is received */}
               {/* <Nav.Link href="/sponsor">sponsors</Nav.Link> */}
 
-              <Nav.Link href="/contactus">contact us</Nav.Link>
+              {/* <Nav.Link href="/contactus">contact us</Nav.Link> */}
               {/* <Nav.Link href="/contactus">contact us</Nav.Link> */}
             </Nav>
-            <Nav className="socials">
+            {/* <Nav className="socials">
               <Navbar.Brand
                 id="instagram"
                 href="https://www.instagram.com/calstatela_acm/?hl=en"
@@ -166,13 +169,13 @@ class Navi extends React.Component {
                   icon={faLinkedin}
                 ></FontAwesomeIcon>
               </Navbar.Brand>
-            </Nav>
+            </Nav> */}
             {/* <div class = "election">
       <ElectionResults />
     </div> */}
             <div class="membership-btn">
               <Nav.Link href="/membership">
-                <Button variant="light">Membership</Button>
+                <Button variant="light" style={{fontSize: "16px"}}>Membership</Button>
               </Nav.Link>
             </div>
             {/* <Nav.Link href="https://calstatelaacm-portal.web.app/#/"><Button variant="light">ACM Portal</Button></Nav.Link> */}

@@ -2,15 +2,20 @@ import React, { Component } from "react";
 import { useState, useEffect } from "react";
 import { db } from "../../professional-events/firebaseConfig";
 import {
-  getFirestore,
-  collection,
   collectionGroup,
   getDocs,
 } from "firebase/firestore";
-import { Card, Button, Row, Col, Image, Modal } from "react-bootstrap";
+import { Row, Col, Image, Modal } from "react-bootstrap";
 import { Carousel } from "react-responsive-carousel";
 
 import "./impAnnouncements.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faInstagram,
+  faFacebookF,
+  faDiscord,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 const ImpAnnouncements = () => {
   const [upcomingEvent, setUpcoming] = useState(null);
@@ -100,8 +105,37 @@ const ImpAnnouncements = () => {
         </div>
         <div className="description mt-3">
           <p>
-            Communications will be done via email, Discord, and social media
+            Communications will be done via email, Discord, and social media!
           </p>  
+          <div className="iconContainer">
+            
+            <FontAwesomeIcon
+              className="iconSocial"
+              size="2x"
+              icon={faInstagram}
+              onClick={() => window.open("https://www.instagram.com/calstatela_acm/?hl=en")}
+              />
+            <FontAwesomeIcon
+              className="iconSocial"
+              size="2x"
+              icon={faFacebookF}
+              onClick={() => window.open("https://www.facebook.com/calstatela.acm")}
+            />
+            <FontAwesomeIcon
+              className="iconSocial"
+              size="2x"
+              icon={faDiscord}
+              onClick={() => window.open("https://discordapp.com/invite/wX58JRv")}
+              />
+            <FontAwesomeIcon
+              className="iconSocial"
+              size="2x"
+              icon={faLinkedin}
+              onClick={() => window.open("https://www.linkedin.com/in/acm-cal-state-la-2a92b4260/")}
+              />
+
+          </div>
+          
         </div>
         <br></br>
 

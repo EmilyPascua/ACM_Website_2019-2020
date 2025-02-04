@@ -22,7 +22,6 @@
     "jsencrypt": "^3.3.2",
     "moment": "^2.29.4",
     "multiselect-react-dropdown": "^2.0.25",
-    "n": "^9.2.0",
     "react": "^16.14.0",
     "react-animation-on-scroll": "^5.1.0",
     "react-awesome-modal": "^2.0.5",

@@ -117,15 +117,13 @@ class Projects extends React.Component {
           </div>
         </div>
         <div className="video-header">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/S-udTtM_hoY?si=7l_2_9SRkAsybCmB"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+        <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/MowLjzsGmic?si=V1Sz3ZXtYeBtmR7q"
+        title="YouTube video player" 
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
         </div>
         {this.state.currentProj && this.state.archiveProj && (
           <Tab.Container defaultActiveKey={this.state.currentProjSem}>

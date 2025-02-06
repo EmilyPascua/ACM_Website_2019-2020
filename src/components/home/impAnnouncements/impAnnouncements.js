@@ -93,15 +93,7 @@ const ImpAnnouncements = () => {
       <div className="content">
         <div className="title mt-4 mb-5">Academic Year 2024-2025</div>
         <div className="video-header">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/7NoRuK4Z9Nw?si=e1JoEb8z6K94BFKl"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tMpD5ZNHgBI?si=W84ML7EarJK5YroT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div className="description mt-3">
           <p>

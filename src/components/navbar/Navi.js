@@ -7,14 +7,7 @@ import {
   Nav,
   Button,
 } from "react-bootstrap";
-import {
-  faInstagram,
-  faFacebookF,
-  faDiscord,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 
 // function ElectionResults() {
@@ -134,7 +127,7 @@ class Navi extends React.Component {
                 href="https://www.instagram.com/calstatela_acm/?hl=en"
               >
                 <FontAwesomeIcon
-                  className="iconBrandNav"
+                  className="iconBrandNav"padding-bott
                   size="2x"
                   icon={faInstagram}
                 ></FontAwesomeIcon>
@@ -173,7 +166,7 @@ class Navi extends React.Component {
             {/* <div class = "election">
       <ElectionResults />
     </div> */}
-            <div class="membership-btn">
+            <div class="membership-btn" >
               <Nav.Link href="/membership">
                 <Button variant="light" style={{fontSize: "16px"}}>Membership</Button>
               </Nav.Link>
@@ -183,7 +176,7 @@ class Navi extends React.Component {
         </Navbar>
         <div class="hover-announcements-background"></div>
         <div class="hover-announcements">
-          Interested in professional development? Become an ACM member and join our Mentorship Program where alumni discuss making a resume, getting an intership, time management and finacial literacy! Hosted online on Thursdays: 4:30 pm to 5:50 pm and Saturdays: 9:00 am to 10:20 am.
+        Interested in professional development? Become an ACM member and join our Prodev Program where alumni & ACM leaders discuss making a resume, getting an intership, time management and finacial literacy! Hosted online every other Thursday, starting Febuary 4th, from 3:00pm - 4:00pm.
         </div>
       </>
     );

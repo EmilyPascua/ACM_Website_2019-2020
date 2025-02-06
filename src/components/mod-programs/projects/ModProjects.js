@@ -10,7 +10,7 @@ const ModProjects = () => {
         <Card>
             <Card.Title className="text-center title">Projects</Card.Title>
             <Card.Body>
-                <div>Join our semester-long workshop to enhance your coding skills through a hands-on project and expert guidance from our ACM leaders. 
+                <div style={{textAlign: "center"}} >Join our semester-long workshop to enhance your coding skills through a hands-on project and expert guidance from our ACM leaders. 
                     Perfect for students eager to advance their practical programming abilities while adding to their resume.
                     
                 </div>
@@ -26,7 +26,7 @@ const ModProjects = () => {
 
                 {/*Not sure what I'm supposed to link to  */}
                 <div className = "link">
-                    <Nav.Link href = "./projects/CurrentProjects"><Image src = {require("./photos/link.png")}></Image>See what we're doing this semester!</Nav.Link>
+                    <a href = "./projects"><Image src = {require("./photos/link.png")}></Image>See what we're doing this semester!</a>
                 </div>
                 
 

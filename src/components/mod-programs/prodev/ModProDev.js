@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Nav, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import workshopImage1 from './images/Conference_and_getting_interviews.png';
 import workshopImage2 from './images/Behavioral.png';
@@ -16,8 +16,8 @@ const ModProDev = () => {
   return (
     <Card className="h-100" style={borderStyle}>
       <Card.Body className="px-4 pb-2">
-        <Card.Title className="text-center py-2" style={{ marginTop: '-20px' }}>
-          Pro Dev Workshops
+        <Card.Title className="text-center py-2 title" style={{ marginTop: '-20px' }}>
+         Pro Dev Workshops
         </Card.Title>
 
         <div 
@@ -56,10 +56,10 @@ const ModProDev = () => {
             alt="Resume Workshop LinkedIn"
             style={{ width: '18%', height: 'auto', ...borderStyle }} />
         </div>
-        <div className="text-center mt-3">
-          <Link to="/more-info" style={{ textDecoration: 'none', color: '#007bff', fontWeight: 'bold' }}>
-            Learn more about our workshops
-          </Link>
+        
+
+        <div className = "link" >
+            <a href = "./prodev"><Image style={{width: '5%', height: '5%'}} src = {require("./images/link.png")} className='my-4'></Image>Learn more about our workshops!</a>
         </div>
       </Card.Body>
     </Card>

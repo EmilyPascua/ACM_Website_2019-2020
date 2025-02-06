@@ -34,6 +34,7 @@
 
    .card{
       border: 2px solid rgb(0, 153, 255, 0.4);
+      border-radius: 8px;
    }
 
    .link img{

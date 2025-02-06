@@ -46,6 +46,9 @@ const ProjectsAdmin = () => {
         if (isMounted) {
           //beginner snap
           proSnap.forEach((doc) => {
+            if (!doc.data().level.beginners) {
+              return; // Skip this iteration
+            }
             const uProject = {};
 
             var skillsArr = doc.data().level.beginners.skills;
@@ -150,6 +153,7 @@ const ProjectsAdmin = () => {
           <Tab eventKey="semester" title="Semester">
             <ProjectSubTab data={currentProjects} />
           </Tab>
+          
           <Tab eventKey="archived" title="Archived">
             <ProjectSubTab data={archivedProjects} />
           </Tab>

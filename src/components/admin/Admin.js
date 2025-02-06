@@ -9,7 +9,7 @@ const Admin = () => {
     >
       <div className="d-flex flex-wrap justify-content-center align-items-center">
         <Link to="/ACM_admin/projects">
-          <Button variant="primary" className="m-2">
+          <Button variant="primary" className="m-2" disabled>
             Projects
           </Button>
         </Link>

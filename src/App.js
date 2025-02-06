@@ -24,6 +24,7 @@ import Portal from "./components/portal/Portal.js";
 import NewBoard from "./components/board/NewBoard";
 import ACM_Login from "./components/login/ACM_Login.js";
 import Admin from "./components/admin/Admin";
+import ProDev from "./components/prodev/ProDev.js";
 import { Navbar } from "react-bootstrap";
 
 
@@ -100,6 +101,7 @@ class App extends React.Component {
         <Route path="/portal" component={Portal} />
         <Route path="/Success" component={SuccessPage} />
         <Route path="/mentorship" component={Programs} />
+        <Route path="/prodev" component={ProDev} / >
         <Route
           path="/discord"
           component={() => {
